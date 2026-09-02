@@ -9,4 +9,9 @@ setup(name='Openapi2jsonschema',
       author_email='yann@mandragor.org',
       url='http://github.com/yannh/openapi2jsonschema',
       packages=['openapi2jsonschema'],
-      )
+      entry_points={
+            "console_scripts": [
+                  "openapi2jsonschema=openapi2jsonschema.command:default",
+            ],
+      },
+)
